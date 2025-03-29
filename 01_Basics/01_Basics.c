@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    printf("This is my first C Program");
+    float num1, num2, sum, average;
+
+    printf("Enter two numbers: ");
+    scanf("%f %f", &num1, &num2);
+
+    sum = num1 + num2;
+    average = sum / 2;
+
+    printf("Sum: %.2f\n", sum);
+    printf("Average: %.2f\n", average);
+
     return 0;
 }
-
-// #include <stdio.h> is a header file library that lets uswork with input and output functions.
-// main() This is called a function. Any code inside its curlybrackets {} will be executed.
-// the printf() is a function used to output/print text to the screen.
-//****************** Every C statement ends with a semicolon *************************
-// return 0 ends the main() function
